@@ -1,0 +1,2 @@
+npm install strapi-plugin-populate-all
+npm install @_sh/strapi-plugin-ckeditor

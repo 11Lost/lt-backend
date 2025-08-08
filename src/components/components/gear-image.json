@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_gear_images",
+  "info": {
+    "displayName": "GearImage"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

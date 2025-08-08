@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "porducts",
+  "info": {
+    "singularName": "porduct",
+    "pluralName": "porducts",
+    "displayName": "porduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

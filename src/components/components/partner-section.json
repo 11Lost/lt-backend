@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_partner_sections",
+  "info": {
+    "displayName": "PartnerSection",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "component",
+      "component": "components.partner-banner",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

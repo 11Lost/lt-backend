@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_partners",
+  "info": {
+    "displayName": "Partners"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

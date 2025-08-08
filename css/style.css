@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-header {
+    background-image: url('/nav-bg.jpg');
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.logo {
+    background-image: url('/raise-logo.png');
+    height: 73px;
+    width: 165px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-item {
+    color: antiquewhite;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.register-button {
+    background: yellow;
+    width: 108px;
+    text-align: center;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #676767;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    max-width: 1232px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    /* Optional: responsive stacking on smaller screens */
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* optional */
+}
+
+#about-section {
+    margin: 0 10%;
+}
+
+#gearImage {
+    background-image: url('/nav-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 37px 0;
+
+
+}
+
+#keynote-speakers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    /* spacing between items */
+    padding: 20px;
+}
+
+.speaker {
+    text-align: center;
+    background-color: rgb(225, 225, 225);
+}
+
+.speaker img {
+    width: auto;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.speaker .detail {
+    background-image: url('/nav-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#speakers {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#speakers img {
+    min-width: 215px;
+    height: 240px;
+    border-radius: 10px;
+    width: auto;
+}
+
+#speakers .detail {
+    background-image: url('/nav-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.newCard {
+    display: flex;
+    width: 485px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 0;
+    background-color: #fff;
+}
+
+.newCard img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.newCard .detail {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newCard h4 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.newCard p {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.newCard a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: color 0.3s;
+}
+
+.newCard a:hover {
+    color: #0056b3;
+}
+
+#news {
+    display: flex;
+    column-gap: 24px;
+    /* width: 100vw; */
+    overflow-x: auto;
+    padding: 0;
+}
+
+#partners h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.partner-img {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.main-title {
+    padding: 10px 20px 0;
+    font-size: 30px;
+}
+
+section {
+    padding: 1rem;
+}
+.partner img {
+    width: auto;
+}
+footer {
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+}
+footer p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}

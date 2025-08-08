@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registers",
+  "info": {
+    "singularName": "register",
+    "pluralName": "registers",
+    "displayName": "Register"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "text"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "MobileNumber": {
+      "type": "integer"
+    },
+    "LinkedinURL": {
+      "type": "text"
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "CurrentBaseLocation": {
+      "type": "string"
+    },
+    "EmailAddress": {
+      "type": "email"
+    },
+    "IWantToAttendRaise": {
+      "type": "enumeration",
+      "enum": [
+        "InPerson",
+        "Online"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_keynote_speakers",
+  "info": {
+    "displayName": "KeynoteSpeakers"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "richtext"
+    },
+    "designation": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

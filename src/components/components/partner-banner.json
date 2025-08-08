@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_partner_banners",
+  "info": {
+    "displayName": "PartnerBanner",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

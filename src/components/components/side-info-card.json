@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_components_side_info_cards",
+  "info": {
+    "displayName": "SideInfoCard",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "imagePart": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "wq": {
+      "type": "string"
+    },
+    "QWERTYUTREWQ": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

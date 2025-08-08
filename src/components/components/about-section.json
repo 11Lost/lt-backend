@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_about_sections",
+  "info": {
+    "displayName": "AboutSection",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "Desc": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "Image": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}
