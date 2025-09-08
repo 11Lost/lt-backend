@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_our_services",
+  "info": {
+    "displayName": "Our Services"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Card": {
+      "type": "component",
+      "component": "components.service-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

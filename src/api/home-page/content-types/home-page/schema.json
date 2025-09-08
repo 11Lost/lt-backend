@@ -35,6 +35,16 @@
       "component": "components.about-section",
       "repeatable": false
     },
+    "Services": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "components.our-services",
+      "repeatable": false
+    },
     "GearImage": {
       "type": "component",
       "pluginOptions": {

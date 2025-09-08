@@ -86,6 +86,18 @@ export interface ComponentsNews extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsOurServices extends Struct.ComponentSchema {
+  collectionName: 'components_components_our_services';
+  info: {
+    displayName: 'Our Services';
+  };
+  attributes: {
+    Card: Schema.Attribute.Component<'components.service-card', true>;
+    Description: Schema.Attribute.Text;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsPartnerBanner extends Struct.ComponentSchema {
   collectionName: 'components_components_partner_banners';
   info: {
@@ -119,6 +131,17 @@ export interface ComponentsPartners extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsServiceCard extends Struct.ComponentSchema {
+  collectionName: 'components_components_service_cards';
+  info: {
+    displayName: 'service-card';
+  };
+  attributes: {
+    Description: Schema.Attribute.Text;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsSideInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_components_side_info_cards';
   info: {
@@ -148,6 +171,42 @@ export interface ComponentsSpeakers extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsLink extends Struct.ComponentSchema {
+  collectionName: 'components_elements_links';
+  info: {
+    displayName: 'Link';
+  };
+  attributes: {
+    external: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    href: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsLogoLink extends Struct.ComponentSchema {
+  collectionName: 'components_elements_logo_links';
+  info: {
+    displayName: 'Logo link';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface LayoutTopNav extends Struct.ComponentSchema {
+  collectionName: 'components_layout_top_navs';
+  info: {
+    displayName: 'Top nav';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'elements.link', false>;
+    link: Schema.Attribute.Component<'elements.link', true>;
+    logoLink: Schema.Attribute.Component<'elements.logo-link', false>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -156,11 +215,16 @@ declare module '@strapi/strapi' {
       'components.gear-image': ComponentsGearImage;
       'components.keynote-speakers': ComponentsKeynoteSpeakers;
       'components.news': ComponentsNews;
+      'components.our-services': ComponentsOurServices;
       'components.partner-banner': ComponentsPartnerBanner;
       'components.partner-section': ComponentsPartnerSection;
       'components.partners': ComponentsPartners;
+      'components.service-card': ComponentsServiceCard;
       'components.side-info-card': ComponentsSideInfoCard;
       'components.speakers': ComponentsSpeakers;
+      'elements.link': ElementsLink;
+      'elements.logo-link': ElementsLogoLink;
+      'layout.top-nav': LayoutTopNav;
     }
   }
 }
