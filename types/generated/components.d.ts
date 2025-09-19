@@ -180,6 +180,7 @@ export interface ElementsLink extends Struct.ComponentSchema {
     external: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     href: Schema.Attribute.String;
     text: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
   };
 }
 
@@ -192,6 +193,21 @@ export interface ElementsLogoLink extends Struct.ComponentSchema {
     href: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.String;
+  };
+}
+
+export interface LayoutFooter extends Struct.ComponentSchema {
+  collectionName: 'components_layout_footers';
+  info: {
+    displayName: 'Footer';
+  };
+  attributes: {
+    companydetails: Schema.Attribute.Component<
+      'components.service-card',
+      false
+    >;
+    footernav: Schema.Attribute.Component<'elements.link', true>;
+    footersocials: Schema.Attribute.Component<'elements.link', true>;
   };
 }
 
@@ -224,6 +240,7 @@ declare module '@strapi/strapi' {
       'components.speakers': ComponentsSpeakers;
       'elements.link': ElementsLink;
       'elements.logo-link': ElementsLogoLink;
+      'layout.footer': LayoutFooter;
       'layout.top-nav': LayoutTopNav;
     }
   }

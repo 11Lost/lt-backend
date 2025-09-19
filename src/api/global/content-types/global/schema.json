@@ -21,6 +21,11 @@
       "type": "component",
       "component": "layout.top-nav",
       "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "layout.footer",
+      "repeatable": false
     }
   }
 }

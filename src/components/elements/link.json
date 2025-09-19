@@ -14,6 +14,9 @@
     "external": {
       "type": "boolean",
       "default": false
+    },
+    "Title": {
+      "type": "string"
     }
   },
   "config": {}

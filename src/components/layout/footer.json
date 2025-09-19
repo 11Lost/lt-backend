@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "companydetails": {
+      "type": "component",
+      "component": "components.service-card",
+      "repeatable": false
+    },
+    "footernav": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": true
+    },
+    "footersocials": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
